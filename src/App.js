@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
 import Mainpage from './Mainpage';
+import StuInfoForm from './StuInfoForm';
 export const UserContext = createContext();
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='//main-page' element={<Mainpage />} />
         </Routes>
       </UserContext.Provider>
+      <StuInfoForm/>
     </div>
   );
 }
